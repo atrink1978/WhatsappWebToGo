@@ -11,8 +11,12 @@ jobs:
         steps:
             -   uses: actions/checkout@v2
 
-            -   name: Run PMD
+
+            -   name: enable x
+                run: chmod +x ./gradlew
+            -   name: run gradle
                 run: ./gradlew pmd
+                
 
 
     buildDebug:
